@@ -8,8 +8,8 @@ function usage() {
     echo
     echo "Example:"
     echo " oc login -u system:admin"
-    echo " $0 prepare --gogs-user-count 100"
-    echo " $0 cleanup --gogs-user-count 100"
+    echo " $0 prepare --gogs-user-count 10"
+    echo " $0 cleanup --gogs-user-count 10"
     echo
     echo "COMMANDS:"
     echo "   prepare        Prepare OpenShift cluster for the DevOps workshop. Default"
@@ -18,7 +18,7 @@ function usage() {
     echo "OPTIONS:"
     echo "   --gogs-admin-user [username]       Gogs admin username to be created. Default 'gogs'"
     echo "   --gogs-admin-password [password]   Gogs admin password to be created. Default 'openshift3'"
-    echo "   --gogs-user-count [num]            Number of users to be created on Gogs. Default 50"
+    echo "   --gogs-user-count 10               Number of users to be created on Gogs. Default 50"
     echo "   --openshift-password [password]    Password for existing OpenShift users. Default 'openshift3'"
     echo "   --apps-hostname-prefix [prefix]    Application hostname prefix in http://svc-namespace.prefix.hostname. Default 'apps'"
     echo "   --infra-project [project]          Project for workshop infra components e.g. Nexus and Gogs . Default 'ocp-workshop'"
